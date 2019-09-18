@@ -3,9 +3,10 @@ function preload(){
 }
 
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth, windowHeight)}
+  background("black")
 }
 
 function draw() {
-  // put drawing code here
+  ellipse(width/2, height/2, 50)
 }
