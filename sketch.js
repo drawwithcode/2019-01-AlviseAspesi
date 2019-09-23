@@ -5,7 +5,7 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   angleMode(DEGREES)
-  background("black");
+  background(207, 152, 62);
   frameRate(12);
 }
 
@@ -61,20 +61,12 @@ function draw() {
   rotate(90);
 
 //metà sopra
-  stroke(
     lerpColor(
-      color("orange"),
-      color("green"),
-      frameCount/60)
-  );
+  stroke(color(85, 87, 92));
   line(100*cos(frameCount*6+3), 100*sin(frameCount*6+3), 100, 0);
 
 //metà sotto
-  stroke(
-  lerpColor(color("green"),
-  color("orange"),
-  frameCount/60)
-);
+  stroke(color(85, 87, 92));
   line(100*cos(frameCount*6), -100*sin(frameCount*6), 100, 0);
 
 
