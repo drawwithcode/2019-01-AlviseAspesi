@@ -52,8 +52,6 @@ function draw() {
   line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
   pop();
 
-//
-
   if(frameCount==60){
     noLoop()
   }
@@ -61,7 +59,6 @@ function draw() {
   rotate(90);
 
 //metà sopra
-    lerpColor(
   stroke(color(85, 87, 92));
   line(100*cos(frameCount*6+3), 100*sin(frameCount*6+3), 100, 0);
 
