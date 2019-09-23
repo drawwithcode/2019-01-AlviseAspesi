@@ -20,22 +20,27 @@ function draw() {
   pop();
   push();
   translate(width/2+200,height/2);
-  rotate(180);
+  rotate(90);
   stroke(200, 210, 174);
-  line(50*cos(frameCount*6+3), 50*sin(frameCount*6+3), 50, 0);
+  line(0, 50, 50*sin(frameCount*3-2), -50*cos(frameCount*3-2));
+  stroke(200, 210, 174);
+  line(0, 50, 50*sin(-frameCount*3+1), -50*cos(-frameCount*3+1));
   pop();
   push();
   translate(width/2,height/2-200);
-  rotate(90);
+  rotate(0);
   stroke(200, 210, 174);
-
-  line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
+  line(0, 50, 50*sin(frameCount*3-2), -50*cos(frameCount*3-2));
+  stroke(200, 210, 174);
+  line(0, 50, 50*sin(-frameCount*3+1), -50*cos(-frameCount*3+1));
   pop();
   push();
   translate(width/2,height/2+200);
-  rotate(-90);
+  rotate(180);
   stroke(200, 210, 174);
-  line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
+  line(0, 50, 50*sin(frameCount*3-2), -50*cos(frameCount*3-2));
+  stroke(200, 210, 174);
+  line(0, 50, 50*sin(-frameCount*3+1), -50*cos(-frameCount*3+1));
   pop();
 
   if(frameCount==60){
