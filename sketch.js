@@ -12,43 +12,26 @@ function setup() {
 function draw() {
   push();
   translate(width/2-200,height/2);
-  stroke(
-    lerpColor(
-      color("orange"),
-      color("green"),
-      frameCount/60)
-  );
+  stroke(245, 232, 201);
   line(50*cos(frameCount*6+3), 50*sin(frameCount*6+3), 50, 0);
   pop();
   push();
   translate(width/2+200,height/2);
   rotate(180);
-  stroke(
-    lerpColor(
-      color("orange"),
-      color("green"),
-      frameCount/60)
-  );
+  stroke(245, 232, 201);
   line(50*cos(frameCount*6+3), 50*sin(frameCount*6+3), 50, 0);
   pop();
   push();
   translate(width/2,height/2-200);
   rotate(90);
-  stroke(
-  lerpColor(color("green"),
-  color("orange"),
-  frameCount/60)
-);
+  stroke(245, 232, 201);
+
   line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
   pop();
   push();
   translate(width/2,height/2+200);
   rotate(-90);
-  stroke(
-  lerpColor(color("green"),
-  color("orange"),
-  frameCount/60)
-);
+  stroke(245, 232, 201);
   line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
   pop();
 
