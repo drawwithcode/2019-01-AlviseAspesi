@@ -10,54 +10,74 @@ function setup() {
 }
 
 function draw() {
-  translate(width/2, height/2);
-
-//metà sopra
-  line(200*cos(frameCount*6+3), 200*sin(frameCount*6+3), 200, 0);
-
+  push();
+  translate(width/2-200,height/2);
   stroke(
     lerpColor(
       color("orange"),
       color("green"),
       frameCount/60)
-    );
-//
-
-//metà sotto
-  line(200*cos(frameCount*6), -200*sin(frameCount*6), 200, 0);
-
-  stroke(
-    lerpColor(color("green"),
-    color("orange"),
-    frameCount/60)
   );
-
-//metà sopra
-  line(200*cos(frameCount*6+3), 200*sin(frameCount*6+3), 200, 0);
-
+  line(50*cos(frameCount*6+3), 50*sin(frameCount*6+3), 50, 0);
+  pop();
+  push();
+  translate(width/2+200,height/2);
+  rotate(180);
   stroke(
     lerpColor(
       color("orange"),
       color("green"),
       frameCount/60)
-    );
-//
-
-//metà sotto
-  line(200*cos(frameCount*6), -200*sin(frameCount*6), 200, 0);
-
-  stroke(
-    lerpColor(color("green"),
-    color("orange"),
-    frameCount/60)
   );
+  line(50*cos(frameCount*6+3), 50*sin(frameCount*6+3), 50, 0);
+  pop();
+  push();
+  translate(width/2,height/2-200);
+  rotate(90);
+  stroke(
+  lerpColor(color("green"),
+  color("orange"),
+  frameCount/60)
+);
+  line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
+  pop();
+  push();
+  translate(width/2,height/2+200);
+  rotate(-90);
+  stroke(
+  lerpColor(color("green"),
+  color("orange"),
+  frameCount/60)
+);
+  line(50*cos(frameCount*6), -50*sin(frameCount*6), 50, 0);
+  pop();
+
+//
 
   if(frameCount==60){
-    noLoop();
+    noLoop()
   }
+  translate(width/2, height/2);
+  rotate(90);
+
+//metà sopra
+  stroke(
+    lerpColor(
+      color("orange"),
+      color("green"),
+      frameCount/60)
+  );
+  line(100*cos(frameCount*6+3), 100*sin(frameCount*6+3), 100, 0);
+
+//metà sotto
+  stroke(
+  lerpColor(color("green"),
+  color("orange"),
+  frameCount/60)
+);
+  line(100*cos(frameCount*6), -100*sin(frameCount*6), 100, 0);
 
 
-  //
 
 
 
