@@ -20,7 +20,7 @@ function draw() {
   stroke(color(85, 87, 92));
   line(100*cos(frameCount*6), -100*sin(frameCount*6), 100, 0);
   pop();
-  
+
   push();
   translate(width/2-200,height/2);
   rotate(-90);
